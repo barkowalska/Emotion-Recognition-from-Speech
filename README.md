@@ -21,17 +21,3 @@ Each file in the dataset adheres to a specific naming scheme:
     Positions 3-5: Code representing the text spoken
     Position 6: Letter indicating the emotion (German abbreviation)
     Position 7: Version identifier (if multiple versions exist)
-
-Example: 03a01Fa.wav represents an audio file from Speaker 03, reading text a01, expressing the emotion "Freude" (Joy).
-Details About the Speakers
-
-    03: Male, aged 31
-    08: Female, aged 34
-    09: Female, aged 21
-    10: Male, aged 32
-    11: Male, aged 26
-    12: Male, aged 30
-    13: Female, aged 32
-    14: Female, aged 35
-    15: Male, aged 25
-    16: Female, aged 31
