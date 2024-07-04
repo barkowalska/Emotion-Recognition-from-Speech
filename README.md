@@ -1,8 +1,9 @@
 # Emotion-Recognition-from-Speech
 
+The project involves evaluating three models: an SVM model, a DBN model, and an SVM model combined with a DBN.
+
 ###### Article
 Emotion Recognition from Chinese Speech for Smart Affective Services Using a Combination of SVM and DBN
-
 
 link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5539696/
 
