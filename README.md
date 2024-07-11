@@ -45,4 +45,4 @@ Feature extraction from an audio signal involves several key steps. First, pre-e
 
 ### description of data division no. 1
 
-Zbiór treningowy składa się z 374 próbek, z których każda ma 1808 cech, oraz odpowiadających im 374 etykiet. Zbiór walidacyjny zawiera 80 próbek, również z 1808 cechami każda, i odpowiadających im 80 etykiet. Zbiór testowy składa się z 81 próbek, każda z 1808 cechami, oraz 81 etykiet. Zestaw treningowy jest największy, co jest typowe, ponieważ służy do trenowania modelu, natomiast zestaw walidacyjny i testowy są mniejsze i służą odpowiednio do tuningu hiperparametrów oraz oceny ostatecznej wydajności modelu.
+The training set consists of 374 samples, each with 1808 features, and their corresponding 374 labels. The validation set contains 80 samples, also with 1808 features each, and their corresponding 80 labels. The test set consists of 81 samples, each with 1808 features, and 81 labels. The training set is the largest, which is typical as it is used for training the model, while the validation and test sets are smaller and are used for hyperparameter tuning and final model performance evaluation, respectively.
