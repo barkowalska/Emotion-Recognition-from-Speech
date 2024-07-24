@@ -4,6 +4,7 @@ from scipy.fftpack import dct
 from sklearn.decomposition import PCA
 
 
+
 def compute_lpc(signal, order):
     return librosa.lpc(signal, order=order)
     
@@ -78,4 +79,6 @@ def extract_features(signal, sample_rate):
         formant_min, formant_max, formant_mean, formant_var
     ])
 
+
     return features
+

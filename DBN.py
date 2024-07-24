@@ -1,6 +1,6 @@
 import torch
 import numpy as np
-from RBM import *
+from RBM import RBM, GB_RBM
 
 class DBN:
     def __init__(self, input_size, hidden_shape, cd_k, stddev):
@@ -70,7 +70,6 @@ class DBN:
         print(f"Evaluation error: {mean_error.item()}")
         return mean_error.item()
     
-    
     def generate_input_for_layer(self, index, data):
         x_dash = data.clone()
         for i in range(index):
@@ -80,10 +79,8 @@ class DBN:
     def reconstruct(self, observation):
         observation = torch.as_tensor(observation, dtype=torch.float32)
         visible = self.generate_input_for_layer(len(self.layer_parameters), observation)
-        layers = len(self.layer_parameters)
-        layers = int(layers)
-        for index in range(0, layers):
-            visible = self.backward_pass(layers - 1 - index, visible)
+        for index in range(len(self.layer_parameters)):
+            visible = self.backward_pass(len(self.layer_parameters) - 1 - index, visible)
         return visible
 
     def save_model(self, file_path):

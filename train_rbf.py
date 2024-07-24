@@ -1,13 +1,13 @@
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score
-from sklearn.model_selection import train_test_split
-from data import preprocess_emodb_data
+from data import preprocess_emodb_data, preprocess_cremad_data
 from RBF import RBF
 
 emodb_directory = 'C:\\Users\\jkowa\\Desktop\\glosowe\\data1'
 
 X_train, X_val, X_test, y_train, y_val, y_test, label_encoder = preprocess_emodb_data(emodb_directory)
+#X_train, X_val, X_test, y_train, y_val, y_test, label_encoder = preprocess_cremad_data(emodb_directory)
 
 
 scaler = StandardScaler()
