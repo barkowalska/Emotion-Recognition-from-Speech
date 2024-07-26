@@ -318,7 +318,7 @@ SVM on  data no. 2 + SVM+DBN
     'beta': [0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 2.0]
 
 
-|                    |        SVM          |       SVM+DBN       |
+|             |      |        SVM          |       SVM+DBN       |
 |-------------|------|---------------------|---------------------|
 | num_centers | beta | Validation Accuracy | Validation Accuracy |
 |-------------|------|---------------------|---------------------|
