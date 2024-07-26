@@ -2,7 +2,7 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score
 from data import preprocess_emodb_data, preprocess_cremad_data
-from RBF import RBF
+from SVM import RBF
 
 emodb_directory = 'C:\\Users\\jkowa\\Desktop\\glosowe\\data1'
 
