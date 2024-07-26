@@ -15,8 +15,8 @@ class RBF:
         self.W = np.random.randn(self.num_centers, self.output_dim)
     
     def _basisfunc(self, c, d):
-        c = np.array(c)  
-        d = np.array(d)  
+        c = np.array(c)  # Ensure c is a numpy array
+        d = np.array(d)  # Ensure d is a numpy array
         return np.exp(-self.beta * norm(c - d) ** 2)
     
     def _calc_activations(self, X):
@@ -32,16 +32,22 @@ class RBF:
         G = self._calc_activations(X)
 
         for epoch in range(epochs):
+            # Calculate activations
             G = self._calc_activations(X)
 
+            # Predict output
             Y_pred = np.dot(G, self.W)
 
+            # Calculate hinge loss
             margin = 1 - Y * Y_pred
 
+            # Calculate error
             error = -Y * (margin > 0).astype(float)
 
+            # Calculate gradients for weights with regularization term
             dEdW = np.dot(G.T, error) + self.lambda_param * self.W
 
+            # Update weights with gradient descent
             self.W -= self.learning_rate * dEdW
     
     def predict(self, X):

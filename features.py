@@ -36,7 +36,8 @@ def extract_features(signal, sample_rate):
     
     frames *= np.hamming(frame_length)
     
-    NFFT = 512
+    #NFFT = 512
+    NFFT= max(512, frame_length)
     mag_frames = np.absolute(np.fft.rfft(frames, NFFT))  
     pow_frames = ((1.0 / NFFT) * ((mag_frames) ** 2))  
 
