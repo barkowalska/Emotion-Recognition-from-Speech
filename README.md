@@ -30,6 +30,8 @@ Each file in the dataset adheres to a specific naming scheme:
 
 link: [https://www.kaggle.com/datasets/ejlok1/cremad/data](https://www.kaggle.com/datasets/nilanshk/emotion-classification-speach/data)
 
+download: https://drive.google.com/drive/folders/1bPuSTk4jsxbY68BHhcNghpvofLRiZ__7?usp=drive_link
+
 The RAVDESS dataset, a comprehensive collection designed for emotional speech and song analysis(I'm using only speech), consists of 7356 unique files. Each file is meticulously named with a 7-part numerical identifier that encapsulates various stimulus characteristics, facilitating detailed analysis and research. Below is a detailed explanation of the filename convention and its components.
 Filename Convention
 
